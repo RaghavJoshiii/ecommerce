@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* This single line enables class-based Dark Mode in v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+}
+
+/* Baseline background for dark mode */
+.dark body {
+  @apply bg-gray-900 text-white;
+}
