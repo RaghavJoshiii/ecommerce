@@ -2,7 +2,7 @@ import axios from 'axios';
 import useStore from '../store/useStore';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', 
+  baseURL: `${import.meta.env.VITE_REACT_BASEURL}`, 
 });
 
 // Interceptor to inject the token into headers
